@@ -2,12 +2,18 @@ package com.company;
 
 import javax.swing.*;
 import java.awt.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
 
-public class App extends JFrame {
+public class App extends JFrame implements ActionListener {
     final int WIDTH = 400;
     final int HEIGHT = 400;
 
+
     final Dimension dimensions = new Dimension(WIDTH, HEIGHT);
+
+    JButton btn;
+    JButton btn2;
 
     App() {
         super("First love my bora");
@@ -24,10 +30,24 @@ public class App extends JFrame {
     }
 
     void buildUI() {
-        JButton btn = new JButton("Button 1");
-        JButton btn2 = new JButton("Button 2");
+        btn = new JButton("Button 1");
+        btn2 = new JButton("Button 2");
         add(btn);
         add(btn2);
 
+        btn.addActionListener(this);
+        btn2.addActionListener(this);
+
+    }
+
+
+    @Override
+    public void actionPerformed(ActionEvent e) {
+        JButton btn_clicked = (JButton) e.getSource();
+        if(btn_clicked.equals(btn)) {
+            System.out.println("Button 1");
+        } else {
+            System.out.println("Button 2");
+        }
     }
 }
