@@ -6,10 +6,11 @@ import java.awt.*;
 public class App extends JFrame {
     final int WIDTH = 400;
     final int HEIGHT = 400;
+
     final Dimension dimensions = new Dimension(WIDTH, HEIGHT);
 
     App() {
-        super("First love");
+        super("First love my bora");
         init();
     }
 
