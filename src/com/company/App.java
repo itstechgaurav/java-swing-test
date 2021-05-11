@@ -16,6 +16,7 @@ public class App extends JFrame {
     }
 
     void init() {
+        setLayout(new FlowLayout(FlowLayout.RIGHT));
 //        initial code
         setVisible(true);
         setSize(dimensions);
@@ -24,8 +25,9 @@ public class App extends JFrame {
 
     void buildUI() {
         JButton btn = new JButton("Button 1");
-
+        JButton btn2 = new JButton("Button 2");
         add(btn);
+        add(btn2);
 
     }
 }
