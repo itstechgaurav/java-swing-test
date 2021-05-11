@@ -12,6 +12,7 @@ public class App extends JFrame {
     App() {
         super("First love my bora");
         init();
+        buildUI();
     }
 
     void init() {
@@ -19,5 +20,12 @@ public class App extends JFrame {
         setVisible(true);
         setSize(dimensions);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+    }
+
+    void buildUI() {
+        JButton btn = new JButton("Button 1");
+
+        add(btn);
+
     }
 }
