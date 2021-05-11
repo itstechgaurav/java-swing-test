@@ -2,10 +2,8 @@ package com.company;
 
 import javax.swing.*;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.ActionListener;
 
-public class App extends JFrame implements ActionListener {
+public class App extends JFrame {
     final int WIDTH = 400;
     final int HEIGHT = 400;
 
@@ -14,6 +12,8 @@ public class App extends JFrame implements ActionListener {
 
     JButton btn;
     JButton btn2;
+
+    JLabel label;
 
     App() {
         super("First love my bora");
@@ -32,22 +32,16 @@ public class App extends JFrame implements ActionListener {
     void buildUI() {
         btn = new JButton("Button 1");
         btn2 = new JButton("Button 2");
+        label = new JLabel("label");
         add(btn);
         add(btn2);
-
-        btn.addActionListener(this);
-        btn2.addActionListener(this);
-
+        add(label);
+        btn.addActionListener((e) ->{
+            label.setText(btn.getText());
+        });
+        btn2.addActionListener((e) ->{
+            label.setText(btn2.getText());
+        });
     }
 
-
-    @Override
-    public void actionPerformed(ActionEvent e) {
-        JButton btn_clicked = (JButton) e.getSource();
-        if(btn_clicked.equals(btn)) {
-            System.out.println("Button 1");
-        } else {
-            System.out.println("Button 2");
-        }
-    }
 }
