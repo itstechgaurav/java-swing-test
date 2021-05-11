@@ -13,6 +13,8 @@ public class App extends JFrame {
     JButton btn;
     JButton btn2;
 
+    JTextField field;
+
     JLabel label;
 
     App() {
@@ -25,22 +27,22 @@ public class App extends JFrame {
         setLayout(new FlowLayout(FlowLayout.CENTER));
 //        initial code
         setVisible(true);
+        setResizable(false);
         setSize(dimensions);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
     }
 
     void buildUI() {
         btn = new JButton("Button 1");
-        btn2 = new JButton("Button 2");
         label = new JLabel("label");
+        field = new JTextField(22);
+        add(field);
         add(btn);
-        add(btn2);
         add(label);
+
+
         btn.addActionListener((e) ->{
-            label.setText(btn.getText());
-        });
-        btn2.addActionListener((e) ->{
-            label.setText(btn2.getText());
+            label.setText(field.getText());
         });
     }
 
