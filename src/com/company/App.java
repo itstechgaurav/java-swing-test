@@ -27,9 +27,9 @@ public class App extends JFrame {
         setLayout(new FlowLayout(FlowLayout.CENTER));
 //        initial code
         setVisible(true);
-        setResizable(false);
         setSize(dimensions);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setResizable(false);
     }
 
     void buildUI() {
