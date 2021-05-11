@@ -21,15 +21,15 @@ public class App extends JFrame {
         super("First love my bora");
         init();
         buildUI();
+        setVisible(true);
     }
 
     void init() {
         setLayout(new FlowLayout(FlowLayout.CENTER));
 //        initial code
-        setVisible(true);
         setSize(dimensions);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        //setResizable(false);
+        setResizable(false);
     }
 
     void buildUI() {
