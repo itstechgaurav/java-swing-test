@@ -16,7 +16,7 @@ public class App extends JFrame {
     }
 
     void init() {
-        setLayout(new FlowLayout(FlowLayout.RIGHT));
+        setLayout(new FlowLayout(FlowLayout.LEFT));
 //        initial code
         setVisible(true);
         setSize(dimensions);
