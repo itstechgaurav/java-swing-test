@@ -11,7 +11,7 @@ public class Todos extends JPanel {
     }
 
     void init() {
-//        setMinimumSize(new Dimension(500, 100));
+        setSize(500, 400);
         setLayout(new FlowLayout(FlowLayout.RIGHT));
     }
 
