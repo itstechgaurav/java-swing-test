@@ -31,5 +31,9 @@ public class Todos extends JPanel {
 
         my_todos.add(newTodo);
         add(newTodo);
+
+        // revalidate and repaint
+        revalidate();
+        repaint();
     }
 }
