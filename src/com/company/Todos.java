@@ -17,6 +17,7 @@ public class Todos extends JPanel {
 
     void buildUI() {
         title = new JLabel("Todos:");
+        title.setPreferredSize(new Dimension(200, 100));
         title.setOpaque(true);
         title.setBackground(Color.blue);
         add(title);
