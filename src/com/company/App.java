@@ -28,6 +28,7 @@ public class App extends JFrame {
     void buildUI() {
         // add app title
         appTitle = new JLabel("To-Do App");
+        add(appTitle);
 
     }
 
