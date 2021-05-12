@@ -47,5 +47,7 @@ public class Todo extends JPanel {
 
     public void delete(){
         parent.remove(this);
+        parent.revalidate();
+        parent.repaint();
     }
 }
