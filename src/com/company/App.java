@@ -29,6 +29,7 @@ public class App extends JFrame {
 //
         setSize(dimensions);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
+        setBackground(Color.WHITE);
 //        setResizable(false);
     }
 
@@ -38,6 +39,7 @@ public class App extends JFrame {
         appTitle.setFont(new Font("Verdana", Font.BOLD, 25));
         appTitle.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         add(appTitle);
+
 
         // add input fields
 
