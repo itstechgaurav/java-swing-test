@@ -4,6 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class Todo extends JPanel {
+    String todo_inner_text;
     JLabel todo_text;
     JButton todo_complete, todo_delete;
     Todos parent;
@@ -20,7 +21,8 @@ public class Todo extends JPanel {
         setLayout(new FlowLayout(FlowLayout.LEFT));
     }
 
-    public void buildUI(String todo_name) {
+    public void create(String todo_name) {
+        todo_inner_text = todo_name;
         todo_text = new JLabel(todo_name);
         todo_complete = new JButton("Mark as complete");
         todo_delete = new JButton("Delete");
@@ -29,6 +31,16 @@ public class Todo extends JPanel {
         add(todo_complete);
         add(todo_delete);
 
-        System.out.println("From build ui");
+        todo_complete.addActionListener(e -> { complete(); });
+    }
+
+    public void complete() {
+        if(todo_complete.getText().equals("Mark as complete")) {
+            todo_text.setText("<html><strike>" + todo_inner_text + "</strike></html>");
+            todo_complete.setText("Mark as incomplete");
+        } else {
+            todo_text.setText(todo_inner_text);
+            todo_complete.setText("Mark as complete");
+        }
     }
 }

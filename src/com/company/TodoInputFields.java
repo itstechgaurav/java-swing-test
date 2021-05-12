@@ -27,7 +27,7 @@ public class TodoInputFields extends JPanel {
         add(addbutton);
 
         addbutton.addActionListener(e -> {
-            parent.addTodo(textField.getText());
+            parent.todos.addTodo(textField.getText());
         });
     }
 }

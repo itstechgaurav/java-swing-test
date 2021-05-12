@@ -51,8 +51,4 @@ public class App extends JFrame {
         add(todos);
     }
 
-    public void addTodo(String todo_name) {
-         todos.addTodo(todo_name);
-    }
-
 }

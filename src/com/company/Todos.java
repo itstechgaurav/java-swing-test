@@ -27,7 +27,7 @@ public class Todos extends JPanel {
     public void addTodo(String todo_name) {
         System.out.println(todo_name);
         Todo newTodo = new Todo(this);
-        newTodo.buildUI(todo_name);
+        newTodo.create(todo_name);
 
         my_todos.add(newTodo);
         add(newTodo);
