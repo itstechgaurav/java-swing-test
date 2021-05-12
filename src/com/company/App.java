@@ -9,12 +9,13 @@ public class App extends JFrame {
 
     final Dimension dimensions = new Dimension(WIDTH, HEIGHT);
 
+    JLabel appTitle;
+
     App() {
         super("To-do App");
         init();
         buildUI();
         setVisible(true);
-
     }
 
     void init() {
@@ -25,6 +26,8 @@ public class App extends JFrame {
     }
 
     void buildUI() {
+        // add app title
+        appTitle = new JLabel("To-Do App");
 
     }
 
