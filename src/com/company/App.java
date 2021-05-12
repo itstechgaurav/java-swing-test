@@ -41,13 +41,17 @@ public class App extends JFrame {
 
         // add input fields
 
-        inputFields = new TodoInputFields(); // panel
+        inputFields = new TodoInputFields(this); // panel
         add(inputFields);
 
         // add todos
 
         todos = new Todos();
         add(todos);
+    }
+
+    public void addTodo(String todo_name) {
+         todos.addTodo(todo_name);
     }
 
 }

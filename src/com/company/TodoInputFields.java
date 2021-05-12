@@ -2,11 +2,15 @@ package com.company;
 
 import javax.swing.*;
 import java.awt.*;
+import java.util.ArrayList;
 
 public class TodoInputFields extends JPanel {
     JTextField textField;
     JButton addbutton;
-    TodoInputFields() {
+    App parent;
+
+    TodoInputFields(App parent) {
+        this.parent = parent;
         init();
         buildUI();
     }
@@ -21,5 +25,9 @@ public class TodoInputFields extends JPanel {
 
         add(textField);
         add(addbutton);
+
+        addbutton.addActionListener(e -> {
+            parent.addTodo(textField.getText());
+        });
     }
 }
