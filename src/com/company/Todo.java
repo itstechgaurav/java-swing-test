@@ -32,6 +32,7 @@ public class Todo extends JPanel {
         add(todo_delete);
 
         todo_complete.addActionListener(e -> { complete(); });
+        todo_delete.addActionListener(e -> { delete(); });
     }
 
     public void complete() {
@@ -42,5 +43,9 @@ public class Todo extends JPanel {
             todo_text.setText(todo_inner_text);
             todo_complete.setText("Mark as complete");
         }
+    }
+
+    public void delete(){
+        parent.remove(this);
     }
 }
