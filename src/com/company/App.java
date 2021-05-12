@@ -14,7 +14,7 @@ public class App extends JFrame {
     JLabel label;
 
     App() {
-        super("First love my bora");
+        super("First love my bora 2");
         init();
         buildUI();
         setVisible(true);
