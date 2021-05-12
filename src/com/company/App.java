@@ -11,6 +11,7 @@ public class App extends JFrame {
 
     JLabel appTitle;
     TodoInputFields inputFields;
+    Todos todos;
 
     App() {
         super("To-do App");
@@ -43,7 +44,10 @@ public class App extends JFrame {
         inputFields = new TodoInputFields(); // panel
         add(inputFields);
 
+        // add todos
 
+        todos = new Todos();
+        add(todos);
     }
 
 }
