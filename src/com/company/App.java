@@ -10,7 +10,7 @@ public class App extends JFrame {
     final Dimension dimensions = new Dimension(WIDTH, HEIGHT);
 
     App() {
-        super("First love my bora 4");
+        super("To-do App");
         init();
         buildUI();
         setVisible(true);
