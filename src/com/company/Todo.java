@@ -14,6 +14,8 @@ public class Todo extends JPanel {
     }
 
     void init() {
+        setOpaque(true);
+        setBackground(Color.WHITE);
         setPreferredSize(new Dimension(450, 100));
         setLayout(new FlowLayout(FlowLayout.LEFT));
     }

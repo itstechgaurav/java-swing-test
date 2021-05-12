@@ -29,7 +29,6 @@ public class App extends JFrame {
 //
         setSize(dimensions);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setBackground(Color.WHITE);
 //        setResizable(false);
     }
 
