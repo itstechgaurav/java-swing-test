@@ -4,7 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 
 public class App extends JFrame {
-    final int WIDTH = 400;
+    final int WIDTH = 500;
     final int HEIGHT = 600;
 
     final Dimension dimensions = new Dimension(WIDTH, HEIGHT);
