@@ -29,7 +29,7 @@ public class App extends JFrame {
 //
         setSize(dimensions);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
-        setResizable(false);
+//        setResizable(false);
     }
 
     void buildUI() {
