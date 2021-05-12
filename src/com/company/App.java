@@ -28,7 +28,7 @@ public class App extends JFrame {
     void buildUI() {
         // add app title
         appTitle = new JLabel("To-Do App");
-        appTitle.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 40));
+        appTitle.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 25));
         add(appTitle);
 
     }
