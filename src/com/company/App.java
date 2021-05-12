@@ -23,7 +23,7 @@ public class App extends JFrame {
 //        BoxLayout boxLayout = new BoxLayout(getContentPane(), BoxLayout.Y_AXIS);
         setLayout(new FlowLayout(FlowLayout.CENTER));
 //      | title - complete
-//      | inputFields - panel
+//      | inputFields - panel - complete
 //      | Todos - panel
 //
         setSize(dimensions);
