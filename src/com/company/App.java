@@ -7,14 +7,10 @@ public class App extends JFrame {
     final int WIDTH = 400;
     final int HEIGHT = 400;
 
-
     final Dimension dimensions = new Dimension(WIDTH, HEIGHT);
 
     JButton btn;
-    JButton btn2;
-
     JTextField field;
-
     JLabel label;
 
     App() {
@@ -22,6 +18,7 @@ public class App extends JFrame {
         init();
         buildUI();
         setVisible(true);
+
     }
 
     void init() {
