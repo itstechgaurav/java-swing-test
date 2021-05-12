@@ -13,7 +13,7 @@ public class App extends JFrame {
     TodoInputFields inputFields;
     Todos todos;
 
-    App() {
+     App() {
         super("To-do App");
         init();
         buildUI();

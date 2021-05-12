@@ -12,7 +12,6 @@ public class TodoInputFields extends JPanel {
     }
 
     void init() {
-//        layout
         setLayout(new FlowLayout(FlowLayout.LEFT));
     }
 
