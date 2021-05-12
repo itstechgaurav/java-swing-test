@@ -26,5 +26,7 @@ public class Todo extends JPanel {
         add(todo_text);
         add(todo_complete);
         add(todo_delete);
+
+        System.out.println("From build ui");
     }
 }
