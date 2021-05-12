@@ -10,6 +10,7 @@ public class App extends JFrame {
     final Dimension dimensions = new Dimension(WIDTH, HEIGHT);
 
     JLabel appTitle;
+    TodoInputFields inputFields;
 
     App() {
         super("To-do App");
@@ -19,7 +20,9 @@ public class App extends JFrame {
     }
 
     void init() {
+//        BoxLayout boxLayout = new BoxLayout(getContentPane(), BoxLayout.Y_AXIS);
         setLayout(new FlowLayout(FlowLayout.CENTER));
+
         setSize(dimensions);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
@@ -28,8 +31,15 @@ public class App extends JFrame {
     void buildUI() {
         // add app title
         appTitle = new JLabel("To-Do App");
-        appTitle.setFont(new Font(Font.SANS_SERIF, Font.BOLD, 25));
+        appTitle.setFont(new Font("Verdana", Font.BOLD, 25));
+        appTitle.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
         add(appTitle);
+
+        // add input fields
+
+        inputFields = new TodoInputFields();
+        add(inputFields);
+
 
     }
 
