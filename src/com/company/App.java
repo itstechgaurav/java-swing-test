@@ -22,7 +22,10 @@ public class App extends JFrame {
     void init() {
 //        BoxLayout boxLayout = new BoxLayout(getContentPane(), BoxLayout.Y_AXIS);
         setLayout(new FlowLayout(FlowLayout.CENTER));
-
+//      | title - complete
+//      | inputFields - panel
+//      | Todos - panel
+//
         setSize(dimensions);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setResizable(false);
@@ -37,7 +40,7 @@ public class App extends JFrame {
 
         // add input fields
 
-        inputFields = new TodoInputFields();
+        inputFields = new TodoInputFields(); // panel
         add(inputFields);
 
 

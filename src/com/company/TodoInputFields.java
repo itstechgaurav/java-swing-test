@@ -12,18 +12,15 @@ public class TodoInputFields extends JPanel {
     }
 
     void init() {
+//        layout
         setLayout(new FlowLayout(FlowLayout.LEFT));
     }
 
     void buildUI() {
-        Insets paddings = new Insets(10, 10, 10, 10);
         textField = new JTextField(30);
         addbutton = new JButton("Add");
-        textField.setMargin(paddings);
-        addbutton.setMargin(paddings);
+
         add(textField);
         add(addbutton);
-
-        textField.setToolTipText("Enter the todo name");
     }
 }
